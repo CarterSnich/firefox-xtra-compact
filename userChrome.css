@@ -1,0 +1,48 @@
+/* 
+ Remove top and bottom spaces on tabs, causing additional 
+ height on title bar 
+ */
+.tab-background {
+	margin-block: 0 !important;
+}
+
+/* Remove space gaps on in between tabs and lef and right edges. */
+.tabbrowser-tab {
+	padding: 0 !important;
+}
+
+/* Remove pre-define height on tabs content. */
+html#main-window
+	body
+	toolbox#navigator-toolbox
+	vbox#titlebar
+	toolbar#TabsToolbar.browser-toolbar.titlebar-color
+	hbox.toolbar-items
+	hbox#TabsToolbar-customization-target.customization-target
+	tabs#tabbrowser-tabs
+	arrowscrollbox#tabbrowser-arrowscrollbox
+	tab.tabbrowser-tab
+	stack.tab-stack
+	hbox.tab-content
+	vbox.tab-label-container {
+	height: auto !important;
+	overflow-x: hidden;
+	overflow-y: visible;
+}
+
+/* 
+ Height left and rigth scroll arrows that appears 
+ when there are too many tabs.
+ */
+toolbarbutton#scrollbutton-down,
+toolbarbutton#scrollbutton-up {
+	display: none !important;
+}
+
+/* 
+ Remove the dropdown button that appears when
+ when there are also too many tabs.
+*/
+toolbarbutton#alltabs-button {
+	display: none !important;
+}

@@ -1,6 +1,6 @@
 # Firefox Xtra Compact
 
-Aiming to make Firefox more compact to give more web view area for low-screen devices.
+Aiming to make Firefox more compact to give a tiny bit more web view area for low-screen devices.
 
 ![window max](1.png)
 ![window floating](2.png)

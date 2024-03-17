@@ -11,3 +11,4 @@ _screenshots taken from a computer with a display resolution of 1366x768_
 
 - remove blank space on the left of the tabs when window is floating
 - make toolbar below title bar more compact
+- one liner

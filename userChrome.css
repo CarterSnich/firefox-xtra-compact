@@ -3,24 +3,19 @@
 	--tab-min-height: 24 !important;
 }
 
-/* 
-	Remove top and bottom spaces on tabs, causing additional 
-	height on title bar 
-*/
+/* Remove top and bottom spaces on tabs, 
+causing additional height on title bar. */
 .tab-background {
 	margin-block: 0 !important;
 }
 
-/* 
-	Remove space gaps on in between tabs and lef and right edges. 
-*/
+/* Remove space gaps on in between tabs and left
+and right edges. */
 .tabbrowser-tab {
 	padding: 0 !important;
 }
 
-/* 
-	Remove pre-define height on tabs content. 
-*/
+/* Remove pre-define height on tabs content. */
 html#main-window
 	body
 	toolbox#navigator-toolbox
@@ -39,33 +34,25 @@ html#main-window
 	overflow-y: visible;
 }
 
-/* 
-	Remove pre tabs spacer.
-*/
+/* Remove pre tabs spacer. */
 hbox.titlebar-spacer[type="pre-tabs"] {
 	display: none !important;
 }
 
-/* 
-	Decrease padding on tabs
-*/
+/* Decrease padding on tabs. */
 hbox.tab-content {
 	padding-inline: 4px !important;
 }
 
-/* 
-	Redesigned the new tab button 
-*/
+/* Redesigned the new tab button. */
 toolbarbutton#tabs-newtab-button {
 	margin-inline: 3px !important;
 	border-radius: 4px !important;
 	padding: 0 !important;
 }
 
-/* 
-	Add background color to the new tab button,
-	instead on the icon when hover
-*/
+/* Add background color to the new tab button,
+instead on the icon when hover. */
 toolbarbutton#tabs-newtab-button:hover {
 	background-color: var(--panel-banner-item-hover-bgcolor) !important;
 }
@@ -76,25 +63,21 @@ toolbarbutton#tabs-newtab-button > image :hover {
 	background: none !important;
 }
 
-/* 
-	Height left and rigth scroll arrows that appears 
-	when there are too many tabs.
-*/
+/* Height left and rigth scroll arrows that 
+	appears when there are too many tabs. */
 toolbarbutton#scrollbutton-down,
 toolbarbutton#scrollbutton-up {
 	display: none !important;
 }
 
-/* 
-	Remove the dropdown button that appears when
-	when there are also too many tabs.
-*/
+/* Remove the dropdown button that appears when 
+there are also too many tabs. */
 toolbarbutton#alltabs-button {
 	display: none !important;
 }
 
+/* Match the tab opacity when window is inactive. */
 toolbar#nav-bar {
-	/* Match the tab opacity when window is inactive. */
 	will-change: auto;
 	transition: opacity var(--inactive-window-transition);
 }
@@ -102,13 +85,24 @@ toolbar#nav-bar:-moz-window-inactive {
 	opacity: var(--inactive-titlebar-opacity);
 }
 
+/* Remove gap between title bar and toolbar. */
 toolbar#nav-bar:not([tabs-hidden="true"]) {
-	/* Remove gap between title bar and toolbar. */
 	box-shadow: none !important;
 }
 
+/* Removed bottom border radius on tabs. */
 tab.tabbrowser-tab > stack.tab-stack > vbox.tab-background {
-	/* Removed bottom border radius on tabs. */
 	border-bottom-left-radius: 0 !important;
 	border-bottom-right-radius: 0 !important;
+}
+
+/* Decrease toolbar height  */
+toolbar#nav-bar {
+	max-height: 26px !important;
+}
+hbox#urlbar {
+	min-height: 22px !important;
+}
+hbox#urlbar:not([focused="true"]) {
+	max-height: 22px !important;
 }

@@ -93,6 +93,16 @@ toolbarbutton#alltabs-button {
 	display: none !important;
 }
 
+/*
+  Match the tab opacity when window is inactive.
+*/
+toolbar#nav-bar {
+  transition: opacity var(--inactive-window-transition);
+}
+toolbar#nav-bar:-moz-window-inactive {
+  opacity: var(--inactive-titlebar-opacity);
+}
+
 /* 
 	Remove gap between title bar and toolbar.
 */

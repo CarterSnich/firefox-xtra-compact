@@ -97,6 +97,7 @@ toolbarbutton#alltabs-button {
   Match the tab opacity when window is inactive.
 */
 toolbar#nav-bar {
+  will-change: opacity;
   transition: opacity var(--inactive-window-transition);
 }
 toolbar#nav-bar:-moz-window-inactive {

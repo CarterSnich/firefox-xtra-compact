@@ -40,6 +40,13 @@ html#main-window
 }
 
 /* 
+	Remove pre tabs spacer.
+*/
+hbox.titlebar-spacer[type="pre-tabs"] {
+	display: none !important;
+}
+
+/* 
 	Decrease padding on tabs
 */
 hbox.tab-content {
@@ -87,8 +94,8 @@ toolbarbutton#alltabs-button {
 }
 
 /* 
-	Remove pre tabs spacer.
+	Remove gap between title bar and toolbar.
 */
-hbox.titlebar-spacer[type="pre-tabs"] {
-	display: none !important;
+toolbar#nav-bar:not([tabs-hidden="true"]) {
+	box-shadow: none !important;
 }

@@ -1,17 +1,28 @@
+:root {
+	/* enforce Compact density to custom height */
+	&[uidensity="compact"] {
+		--tab-min-height: 24;
+	}
+}
+
 /* 
- Remove top and bottom spaces on tabs, causing additional 
- height on title bar 
- */
+	Remove top and bottom spaces on tabs, causing additional 
+	height on title bar 
+*/
 .tab-background {
 	margin-block: 0 !important;
 }
 
-/* Remove space gaps on in between tabs and lef and right edges. */
+/* 
+	Remove space gaps on in between tabs and lef and right edges. 
+*/
 .tabbrowser-tab {
 	padding: 0 !important;
 }
 
-/* Remove pre-define height on tabs content. */
+/* 
+	Remove pre-define height on tabs content. 
+*/
 html#main-window
 	body
 	toolbox#navigator-toolbox
@@ -31,18 +42,25 @@ html#main-window
 }
 
 /* 
- Height left and rigth scroll arrows that appears 
- when there are too many tabs.
- */
+	Height left and rigth scroll arrows that appears 
+	when there are too many tabs.
+*/
 toolbarbutton#scrollbutton-down,
 toolbarbutton#scrollbutton-up {
 	display: none !important;
 }
 
 /* 
- Remove the dropdown button that appears when
- when there are also too many tabs.
+	Remove the dropdown button that appears when
+	when there are also too many tabs.
 */
 toolbarbutton#alltabs-button {
+	display: none !important;
+}
+
+/* 
+	Remove pre tabs spacer.
+*/
+hbox.titlebar-spacer[type="pre-tabs"] {
 	display: none !important;
 }

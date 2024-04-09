@@ -1,8 +1,6 @@
 :root {
 	/* enforce Compact density to custom height */
-	&[uidensity="compact"] {
-		--tab-min-height: 24;
-	}
+	--tab-min-height: 24 !important;
 }
 
 /* 
@@ -39,6 +37,36 @@ html#main-window
 	height: auto !important;
 	overflow-x: hidden;
 	overflow-y: visible;
+}
+
+/* 
+	Decrease padding on tabs
+*/
+hbox.tab-content {
+	padding-inline: 4px !important;
+}
+
+/* 
+	Redesigned the new tab button 
+*/
+toolbarbutton#tabs-newtab-button {
+	margin-inline: 3px !important;
+	border-radius: 4px !important;
+	padding: 0 !important;
+}
+
+/* 
+	Add background color to the new tab button,
+	instead on the icon when hover
+*/
+toolbarbutton#tabs-newtab-button:hover {
+	background-color: var(--panel-banner-item-hover-bgcolor) !important;
+}
+toolbarbutton#tabs-newtab-button > image {
+	padding: 3px !important;
+}
+toolbarbutton#tabs-newtab-button > image :hover {
+	background: none !important;
 }
 
 /* 

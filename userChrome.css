@@ -93,28 +93,22 @@ toolbarbutton#alltabs-button {
 	display: none !important;
 }
 
-/*
-  Match the tab opacity when window is inactive.
-*/
 toolbar#nav-bar {
-  will-change: opacity;
-  transition: opacity var(--inactive-window-transition);
+	/* Match the tab opacity when window is inactive. */
+	will-change: auto;
+	transition: opacity var(--inactive-window-transition);
 }
 toolbar#nav-bar:-moz-window-inactive {
-  opacity: var(--inactive-titlebar-opacity);
+	opacity: var(--inactive-titlebar-opacity);
 }
 
-/* 
-	Remove gap between title bar and toolbar.
-*/
 toolbar#nav-bar:not([tabs-hidden="true"]) {
+	/* Remove gap between title bar and toolbar. */
 	box-shadow: none !important;
 }
 
-/* 
-	Removed bottom border radius on tabs
-*/
 tab.tabbrowser-tab > stack.tab-stack > vbox.tab-background {
+	/* Removed bottom border radius on tabs. */
 	border-bottom-left-radius: 0 !important;
 	border-bottom-right-radius: 0 !important;
 }

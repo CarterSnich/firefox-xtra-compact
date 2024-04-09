@@ -99,3 +99,11 @@ toolbarbutton#alltabs-button {
 toolbar#nav-bar:not([tabs-hidden="true"]) {
 	box-shadow: none !important;
 }
+
+/* 
+	Removed bottom border radius on tabs
+*/
+tab.tabbrowser-tab > stack.tab-stack > vbox.tab-background {
+	border-bottom-left-radius: 0 !important;
+	border-bottom-right-radius: 0 !important;
+}

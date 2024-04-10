@@ -30,8 +30,11 @@ Aiming to make Firefox more compact to give a tiny bit more web view area for lo
 	+ **`gfx.webrender.enabled`**
 	+ **`layout.css.backdrop-filter.enabled`**
 	+ **`svg.context-properties.content.enabled`**
+	+ **`browser.compactmode.show`**
 
 	Then make sure to **enable them all!**
+
+
 
 5. Go to your Firefox profile.
 

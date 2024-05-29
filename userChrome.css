@@ -80,6 +80,7 @@ toolbarbutton#alltabs-button {
 toolbar#nav-bar {
 	will-change: auto;
 	transition: opacity var(--inactive-window-transition);
+	border-top: none;
 }
 toolbar#nav-bar:-moz-window-inactive {
 	opacity: var(--inactive-titlebar-opacity);

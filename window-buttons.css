@@ -1,0 +1,63 @@
+hbox.titlebar-buttonbox {
+	overflow: hidden !important;
+}
+
+toolbarbutton.titlebar-button {
+	appearance: auto !important;
+	margin-block: -3px !important;
+}
+toolbarbutton.titlebar-button > .toolbarbutton-icon {
+	display: none !important;
+}
+
+/* Minimize */
+toolbarbutton.titlebar-button.titlebar-min {
+	content: url(window-buttons/hide-active.png) !important;
+
+	&:hover {
+		content: url(window-buttons/hide-prelight.png) !important;
+	}
+
+	&:-moz-window-inactive {
+		content: url(window-buttons/hide-inactive.png) !important;
+	}
+}
+
+/* Maximize */
+toolbarbutton.titlebar-button.titlebar-max {
+	content: url(window-buttons/maximize-active.png) !important;
+
+	&:hover {
+		content: url(window-buttons/maximize-prelight.png) !important;
+	}
+
+	&:-moz-window-inactive {
+		content: url(window-buttons/maximize-inactive.png) !important;
+	}
+}
+
+/* Restore */
+toolbarbutton.titlebar-button.titlebar-restore {
+	content: url(window-buttons/maximize-active.png) !important;
+
+	&:hover {
+		content: url(window-buttons/maximize-prelight.png) !important;
+	}
+
+	&:-moz-window-inactive {
+		content: url(window-buttons/maximize-inactive.png) !important;
+	}
+}
+
+/* Close */
+toolbarbutton.titlebar-button.titlebar-close {
+	content: url(window-buttons/close-active.png) !important;
+
+	&:hover {
+		content: url(window-buttons/close-prelight.png) !important;
+	}
+
+	&:-moz-window-inactive {
+		content: url(window-buttons/close-inactive.png) !important;
+	}
+}

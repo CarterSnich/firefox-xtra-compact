@@ -1,3 +1,9 @@
+/* 
+	Uncomment if you want custom window button icons.
+	This is added just to match my system theme.
+ */
+@import url("./window-buttons.css");
+
 :root {
 	/* enforce Compact density to custom height */
 	--tab-min-height: 24 !important;

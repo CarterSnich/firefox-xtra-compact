@@ -1,8 +1,7 @@
-/* 
-	Uncomment if you want custom window button icons.
-	This is added just to match my system theme.
+/* Uncomment if you want a custom, MacOS-like window buttons.
+This was added just to match my theme.
  */
-@import url("./window-buttons.css");
+/* @import url("./window-buttons.css"); */
 
 :root {
 	/* enforce Compact density to custom height */

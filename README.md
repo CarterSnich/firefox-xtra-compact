@@ -1,11 +1,11 @@
 # Firefox Xtra Compact
 
 Aiming to make Firefox more compact to give a tiny bit more web view area for low-screen devices. 
-*Note: Tested only on XFCE (Linux).*
+
 
 ![screenshot](1.png)
 
-*Screenshot taken from a 1366x768 monitor.*
+*Screenshot taken from a 1366x768 monitor. Note: Tested only on XFCE (Linux).*
 
 
 ![comparison](2.png)

@@ -118,11 +118,11 @@ hbox#urlbar:not([focused="true"]) {
 }
 
 .tab-label-container {
-  height: var(--title-font-size);
+  height: var(--title-font-size) !important;
 }
 
 /* Force height on tab title */
 .tab-text {
-  font-family: var(--title-font);
-  font-size: var(--title-font-size);
+  font-family: var(--title-font) !important;
+  font-size: var(--title-font-size) !important;
 }

@@ -4,111 +4,125 @@ This was added just to match my theme.
 /* @import url("./window-buttons.css"); */
 
 :root {
-	/* enforce Compact density to custom height */
-	--tab-min-height: 24 !important;
+  /* enforce Compact density to custom height */
+  --tab-min-height: 24 !important;
+
+  /* Change to desired font and size. 
+  Recommended small fonts like ProggClean. */
+  --title-font: "ProggyClean Nerd Font";
+  --title-font-size: 16px;
 }
 
 /* Remove top and bottom spaces on tabs, 
 causing additional height on title bar. */
 .tab-background {
-	margin-block: 0 !important;
+  margin-block: 0 !important;
 }
 
 /* Remove space gaps on in between tabs and left
 and right edges. */
 .tabbrowser-tab {
-	padding: 0 !important;
+  padding: 0 !important;
 }
 
 /* Remove pre-define height on tabs content. */
 html#main-window
-	body
-	toolbox#navigator-toolbox
-	vbox#titlebar
-	toolbar#TabsToolbar.browser-toolbar.titlebar-color
-	hbox.toolbar-items
-	hbox#TabsToolbar-customization-target.customization-target
-	tabs#tabbrowser-tabs
-	arrowscrollbox#tabbrowser-arrowscrollbox
-	tab.tabbrowser-tab
-	stack.tab-stack
-	hbox.tab-content
-	vbox.tab-label-container {
-	height: auto !important;
-	overflow-x: hidden;
-	overflow-y: visible;
+  body
+  toolbox#navigator-toolbox
+  vbox#titlebar
+  toolbar#TabsToolbar.browser-toolbar.titlebar-color
+  hbox.toolbar-items
+  hbox#TabsToolbar-customization-target.customization-target
+  tabs#tabbrowser-tabs
+  arrowscrollbox#tabbrowser-arrowscrollbox
+  tab.tabbrowser-tab
+  stack.tab-stack
+  hbox.tab-content {
+  height: auto !important;
+  overflow-x: hidden;
+  overflow-y: visible;
 }
 
 /* Remove pre tabs spacer. */
 hbox.titlebar-spacer[type="pre-tabs"] {
-	display: none !important;
+  display: none !important;
 }
 
 /* Decrease padding on tabs. */
 hbox.tab-content {
-	padding-inline: 4px !important;
+  padding-inline: 4px !important;
 }
 
 /* Redesigned the new tab button. */
 toolbarbutton#tabs-newtab-button {
-	margin-inline: 3px !important;
-	border-radius: 4px !important;
-	padding: 0 !important;
+  margin-inline: 3px !important;
+  border-radius: 4px !important;
+  padding: 0 !important;
 }
 
 /* Add background color to the new tab button,
 instead on the icon when hover. */
 toolbarbutton#tabs-newtab-button:hover {
-	background-color: var(--panel-banner-item-hover-bgcolor) !important;
+  background-color: var(--panel-banner-item-hover-bgcolor) !important;
 }
 toolbarbutton#tabs-newtab-button > image {
-	padding: 3px !important;
+  padding: 3px !important;
 }
 toolbarbutton#tabs-newtab-button > image :hover {
-	background: none !important;
+  background: none !important;
 }
 
 /* Height left and rigth scroll arrows that 
 	appears when there are too many tabs. */
 toolbarbutton#scrollbutton-down,
 toolbarbutton#scrollbutton-up {
-	display: none !important;
+  display: none !important;
 }
 
 /* Remove the dropdown button that appears when 
 there are also too many tabs. */
 toolbarbutton#alltabs-button {
-	display: none !important;
+  display: none !important;
 }
 
 /* Match the tab opacity when window is inactive. */
 toolbar#nav-bar {
-	will-change: auto;
-	transition: opacity var(--inactive-window-transition);
-	border-top: none !important;
+  will-change: auto;
+  transition: opacity var(--inactive-window-transition);
+  border-top: none !important;
 }
 toolbar#nav-bar:-moz-window-inactive {
-	opacity: var(--inactive-titlebar-opacity);
+  opacity: var(--inactive-titlebar-opacity);
 }
 
 /* Remove gap between title bar and toolbar. */
 toolbar#nav-bar:not([tabs-hidden="true"]) {
-	box-shadow: none !important;
+  box-shadow: none !important;
 }
 
 /* Removed bottom border radius on tabs. */
 tab.tabbrowser-tab > stack.tab-stack > vbox.tab-background {
-	border-bottom-left-radius: 0 !important;
-	border-bottom-right-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
 }
 
 /* Decrease toolbar height  */
 toolbar#nav-bar {
-	max-height: 26px !important;
+  max-height: 26px !important;
 }
 hbox#urlbar {
-	min-height: 22px !important;
+  min-height: 22px !important;
 }
 hbox#urlbar:not([focused="true"]) {
-	max-height: 22px !important;
+  max-height: 22px !important;
+}
+
+.tab-label-container {
+  height: 16px;
+}
+
+/* Force height on tab title */
+.tab-text {
+  font-family: var(--title-font);
+  font-size: 16px;
 }

@@ -126,3 +126,45 @@ hbox#urlbar:not([focused="true"]) {
   font-family: var(--title-font) !important;
   font-size: var(--title-font-size) !important;
 }
+
+/* fixed overlapping hover effects on toolbar buttons */
+.unified-extensions-item-row-wrapper {
+  height: 100% !important;
+}
+toolbarbutton stack.toolbarbutton-badge-stack{
+  padding: 0 !important;
+  height: 100% !important;
+  aspect-ratio: 1/1 !important;
+  display: grid !important;
+  place-content: center !important;
+  background-image: red !important;
+}
+toolbaritem > toolbarbutton,  toolbarbutton#unified-extensions-button {
+  height: 100% !important;
+}
+toolbarbutton#back-button > image,
+toolbarbutton#forward-button > image,
+toolbaritem > toolbarbutton > image, 
+toolbarbutton#unified-extensions-button > image {
+  list-style-image: none;
+  height: 100% !important;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/* back button */
+toolbarbutton#back-button > image {
+  background-image: url("chrome://browser/skin/back.svg");
+}
+/* forward button */
+toolbarbutton#forward-button > image {
+  background-image: url("chrome://browser/skin/forward.svg");
+}
+/* refresh/reload page button */
+toolbaritem > toolbarbutton#reload-button > image {
+  background-image: url("chrome://global/skin/icons/reload.svg"); 
+}
+/* show unpinned extensions button */
+toolbarbutton#unified-extensions-button > image {
+  background-image: url("chrome://mozapps/skin/extensions/extension.svg");  
+}
+

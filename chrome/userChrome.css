@@ -144,9 +144,10 @@ toolbaritem > toolbarbutton,  toolbarbutton#unified-extensions-button {
 }
 toolbarbutton#back-button > image,
 toolbarbutton#forward-button > image,
+toolbarbutton#stop-button > image,
 toolbaritem > toolbarbutton > image, 
 toolbarbutton#unified-extensions-button > image {
-  list-style-image: none;
+  list-style-image: none !important;
   height: 100% !important;
   background-repeat: no-repeat;
   background-position: center;
@@ -158,6 +159,10 @@ toolbarbutton#back-button > image {
 /* forward button */
 toolbarbutton#forward-button > image {
   background-image: url("chrome://browser/skin/forward.svg");
+}
+/* stop button */
+toolbarbutton#stop-button > image {
+  background-image: url("chrome://browser/skin/close.svg");
 }
 /* refresh/reload page button */
 toolbaritem > toolbarbutton#reload-button > image {
